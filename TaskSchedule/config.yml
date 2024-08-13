@@ -1,0 +1,13 @@
+start_end_date: ["2023-11-10", "2023-11-20"]
+location:
+  random_range: [1, 10]
+new_task:
+  random_range: [100, 150]
+  slot_start_range: [540, 1200]
+  slot_duration: 60
+staffs:
+  random_range: [10, 100] # random number of elements
+  shift_choice: [[540, 1200], [540, 1080], [540, 720]] # Staff have multiple shifts but each day staff only have 1 shift chosen randomly, the list of shift slot would be stored in availableDateShiftSlots
+  transition_velocity: 200000 # velocity of staff transition from one task to another in km/h
+current_task:
+  assign_max_num_tasks: 20
